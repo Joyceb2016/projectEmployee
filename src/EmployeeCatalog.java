@@ -5,14 +5,14 @@ import java.util.Scanner;
 
 public class EmployeeCatalog {
 	static Scanner input = new Scanner(System.in);
-
-	private static ArrayList<Employee> employeeCatalog = new ArrayList<Employee>(); 
 	static Menu menu = new Menu();
+	private static ArrayList<Employee> employeeCatalog = new ArrayList<Employee>(); 
+	
 
 	public static void addEmployee(Employee employee) {
-		employeeCatalog.add(employee);
+		employeeCatalog.add(employee);	
 	}
-
+	
 	public void deleteEmployee() {
 		System.out.println("Enter employee number : ");
 		int empNumber = input.nextInt();
@@ -32,6 +32,7 @@ public class EmployeeCatalog {
 		for (Employee nextEmployee : employeeCatalog) {
 			if (nextEmployee.getEmpNumber() == empNumber) {
 				System.out.println(nextEmployee.toString());
+				
 				System.out.println("Enter new employee first name : ");
 				String firstName1 = input.nextLine();
 				nextEmployee.setFirstName(firstName1);
@@ -92,11 +93,8 @@ public class EmployeeCatalog {
 			else {
 				System.out.println("********  There is no employee with that name  ********");
 			}
-
-		}
-
-			
 	}
+		}
 
 	public void searchEmployeeNumber() {
 		System.out.println("Enter employee number : ");
@@ -115,7 +113,6 @@ public class EmployeeCatalog {
 				
 		}
 		
-//	}
 
 	public void searchEmployeeDepartment() {
 		System.out.println("Choose the employee department : 1 - Developer  2 - Technician  3 - Chief");

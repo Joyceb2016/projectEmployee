@@ -108,9 +108,19 @@ public class Employee {
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
-
+	public Employee(int empNumber, String firstName, String lastName, GenderType gender,
+			String address,String departmentName,  String birthdate, int salary) {	
+		this.empNumber = empNumber;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.gender = gender;
+		this.address = address;
+		this.departmentName = departmentName;
+		this.birthdate = birthdate;
+		this.salary = salary;
 }
 
+}
 
 
 

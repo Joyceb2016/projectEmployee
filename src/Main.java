@@ -10,6 +10,23 @@ public class Main {
 	static EmployeeCatalog employeeCatalog = new EmployeeCatalog();
 	
 	public static void main(String[] args) {
+		Employee e1 = new Developer(1, "Anna", "Carlsson",GenderType.FEMALE, "Danderyd","Technician","19770102", 11000);
+		EmployeeCatalog.addEmployee(e1);
+		
+		Employee e2 = new Developer(2, "Ralf", "Bror",GenderType.MALE, "Luleå","Developer","19750604", 15000);
+		EmployeeCatalog.addEmployee(e2);
+		
+		Employee e3 = new Developer(3, "Jan", "Flytt",GenderType.MALE, "Tumba","Developer","19740206", 10000);
+		EmployeeCatalog.addEmployee(e3);
+		
+		Employee e4= new Developer(4, "Maria", "Tolstoy",GenderType.FEMALE, "Stockholm","Developer","19901212", 18000);
+		EmployeeCatalog.addEmployee(e4);
+		
+		Employee e5 = new Technician(5, "Henrik", "Glad",GenderType.MALE, "Solna","Technician","19860506", 13000);
+		EmployeeCatalog.addEmployee(e5);
+		Employee e6 = new Technician(6, "Jenny", "Snäll",GenderType.FEMALE, "Sala","Chief","19660501", 29000);
+		EmployeeCatalog.addEmployee(e6);
+		
 		Main.mainMenu ();
 		
 	}
